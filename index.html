@@ -13,16 +13,34 @@
 
         <div id="title"><h1>Demo for Basic Auto-Play Algorithim on YouTube</h1></div>
         <div id="logo"><center><img src = "logo.png" style ="height: 100%;  width: 100%;"/></center></div>
-        <div id="search"> <h1>&nbsp;&nbsp;&nbsp;&nbsp;Tabla Music</h1> &nbsp;&nbsp;&nbsp;&nbsp;<h2>|</h2> &nbsp;&nbsp; click on enter to see auto-play queue</div>
+        <div id="search"> &nbsp;&nbsp;&nbsp;&nbsp <img src="search.png" style="height: 55%; width: 5%; top: 2%;"/>
+            <div id = "searchtxt"><h1>&nbsp;&nbsp;&nbsp;&nbsp;Tabla Music &nbsp;&nbsp;&nbsp;&nbsp;|</h1> 
+                &nbsp;&nbsp; click on enter to see auto-play queue</div>
+            </div>
 
         <button id="enter" onclick="fillResults()">Enter</button>
+        
     
-        <div class="box1" style="left: 7vw;" ><p>Introduction</p> <div id="txt" class="resultr1" style="left: 10%;"></div> </div>
-        <div class="box1" style="left: 36vw;"><p>Video#1</p> <div id="r1" class="resultr1" style="left: 10%;"></div> </div>
-        <div class="box1" style="left: 65vw;"><p>Video#2</p> <div id="r2" class="resultr1" style="left: 10%;"></div> </div>
-        <div class="box2" style="left: 7vw;"> <p>Video#3</p> <div id="r3" class="resultr2" style="left: 10%;"></div> </div>
-        <div class="box2" style="left: 36vw;"><p>Video#4</p> <div id="r4" class="resultr2" style="left: 10%;"></div> </div>
-        <div class="box2" style="left: 65vw;"> <p>Video#5</p><div id="r5" class="resultr2" style="left: 10%;"></div> </div>
+        <div class="box1" style="left: 7vw; overflow-y: scroll;" > <p>Introduction</p>
+            
+
+            <div id="txt" style="left: 10%;">
+                <center><img src="autoplay.png" style="height:90%; width:50%; left:20%;"/></center>
+            
+            The search button is for 'Tabla Music'. The auto-play feature is being used to ensure the continuity of the music. 
+            However...The  auto-play queue is not just a mix of concerts, but lessons too!
+            Hence the interface is rendered only *Useful-ish*.
+
+            <p>On clicking the enter button, the video title of the auto-play queue shows up in each box. 
+            Video #5 is played after Video #4, which is played after Video #3 and so on. </p><br>
+            </div> </div>
+        
+        
+        <div class="box1" style="left: 36vw;"><p>Video #1</p> <div id="r1" class="resultr1" style="left: 10%;"></div> </div>
+        <div class="box1" style="left: 65vw;"><p>Video #2</p> <div id="r2" class="resultr1" style="left: 10%;"></div> </div>
+        <div class="box2" style="left: 7vw;"> <p>Video #3</p> <div id="r3" class="resultr2" style="left: 10%;"></div> </div>
+        <div class="box2" style="left: 36vw;"><p>Video #4</p> <div id="r4" class="resultr2" style="left: 10%;"></div> </div>
+        <div class="box2" style="left: 65vw;"> <p>Video #5</p><div id="r5" class="resultr2" style="left: 10%;"></div> </div>
     </div>
 </body>
 
